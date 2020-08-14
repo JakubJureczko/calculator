@@ -3,9 +3,9 @@ import "./Calculator.css"
 
 function Calculator() {
   const [result, setResult] = useState("");
-  const inputRef = useRef(null);
+  // const inputRef = useRef(null);
 
-  useEffect(() => inputRef.current.focus());
+  // useEffect(() => inputRef.current.focus());
 
   function handleClick(e) {
     setResult(result.concat(e.target.name))
@@ -28,7 +28,7 @@ function Calculator() {
   return (
   <div className="calc">
     <form>
-      <input type="text"  value={result} ref={inputRef}/>
+      <input type="text"  value={result} /*ref={inputRef}*/ />
     </form>
     <div className="keyboard">
       <button id="clear" onClick={clear}>AC</button>

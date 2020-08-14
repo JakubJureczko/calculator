@@ -11,7 +11,9 @@
   .calc {
     width: 100%;
     margin: 1em auto;
+    box-shadow: none;
   }
+
 }
 .keyboard {
   display: grid;
@@ -21,9 +23,12 @@
 }
 
 input[type="text"] {
-  height: 4em;
+  height: 2em;
   width: 98%;
+  font-size: 2em;
   background-color: rgb(236, 233, 233);
+  text-align: right;
+  
  
 }
 
